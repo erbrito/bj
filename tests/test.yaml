@@ -8,5 +8,5 @@
         bonjour_prenom: Pierre
   tasks:
     - name: "Test-1 : validation message"
-      fail: msg="Le message ne contient pas Bonjour-Hi Pierre Dupont"
-      when: "'Bonjour-Hi Pierre Dupont' not in bonjour_out.stdout"
+      fail: msg="Le message ne contient pas Bonjour Pierre Dupont"
+      when: "'Bonjour Pierre Dupont' not in bonjour_out.stdout"
