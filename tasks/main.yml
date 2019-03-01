@@ -6,4 +6,4 @@
   command: |
           echo Bonjour-Hi "{{ bonjour_prenom }}" "{{ bonjour_nom }}"
   register: bonjour_out
-  changed_when: "'xyzyyz' not in bonjour_out.stdout"
+  changed_when: "'abcxyz' not in bonjour_out.stdout"
