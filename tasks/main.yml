@@ -1,0 +1,9 @@
+---
+- include_tasks: "init.yml"
+  tags: init
+
+- name: Version 1 Bonjour {{ bonjour_prenom }} {{ bonjour_nom }}
+  command: |
+          echo Bonjour-Hi "{{ bonjour_prenom }}" "{{ bonjour_nom }}"
+  register: bonjour_out
+  changed_when: "'xyzyyz' not in bonjour_out.stdout"

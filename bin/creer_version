@@ -1,0 +1,9 @@
+_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
+_FEATUREBRANCH="feature/"
+
+[ ! -z "${_BRANCH##*$_FEATUREBRANCH*}" ] && echo "Not in Feature branch" && exit 1
+_DATE=$(date)
+echo ${_DATE} > RELEASE && \
+git add -A && \
+git commit -m "Declenchement nouvelle version ${_DATE}"
+git push -u origin

@@ -1,0 +1,8 @@
+---
+- name: controle des variables
+  fail: msg="La variable '{{ item }}' n'est pas definie"
+  when: item not in vars
+  with_items:
+    - bonjour_nom
+    - bonjour_prenom
+  tags: ['init']

@@ -1,0 +1,1 @@
+ssh -p 2223 localhost declarative-linter < Jenkinsfile

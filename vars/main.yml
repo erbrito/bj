@@ -1,0 +1,4 @@
+---
+bonjour_machine: '{{ ansible_machine }}'
+#bonjour_nom: Elimane
+#bonjour_prenom: GUEYE

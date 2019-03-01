@@ -1,0 +1,6 @@
+rm -rf .git && \
+git init
+git add --all
+git commit -m "Initial Commit"
+git remote add origin ssh://git@bitbucket.home.local:7999/roles/bonjour.git
+git push -u origin master
