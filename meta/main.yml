@@ -1,5 +1,11 @@
 ---
 galaxy_info:
+  role_name: bonjour
   author: "Elimane GUEYE"
   company: EGE
+  min_ansible_version: 2.7
+  description: Role sample to show how to integrate versions, document it, structure and test it
+  license: license (GPLv2, CC-BY, etc)
+  required_variables: true
+
 dependencies: []

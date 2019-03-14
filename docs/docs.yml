@@ -1,0 +1,23 @@
+---
+
+# github_account: erbrito
+
+todos: ['Create documentation', 'review testing strategy'] # (optional) list of todos to print in your README file
+
+
+role_name: bonjour
+
+required_variables:
+    - key: bonjour_nom
+      example: Brito
+      description: Last name
+      default: it is required, there are not default
+    - key: bonjour_nom
+      example: Brito
+      description: Last name
+      default: it is required, there are not default
+
+mandatory_variables:
+  - bonjour_nom
+  - bonjour_prenom
+# exclude: []
